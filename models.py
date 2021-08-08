@@ -64,8 +64,6 @@ class Video(BaseModel):
     title: str
     description: str
     duration: int
-    image: ...
-    first_frame: ...
     date: datetime.datetime
     views: int
     width: int
@@ -81,6 +79,7 @@ class Attachment(BaseModel):
 class WallPost(BaseModel):
     id: int
     owner_id: int
+    is_pinned: Optional[bool]
     from_id: int
     date: datetime.datetime
     text: str
