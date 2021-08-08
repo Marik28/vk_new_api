@@ -5,7 +5,7 @@ from typing import Optional
 from pydantic import BaseModel
 
 
-class AttachmentType(Enum):
+class AttachmentType(str, Enum):
     PHOTO = "photo"
     POSTED_PHOTO = "posted_photo"
     VIDEO = "video"
@@ -26,7 +26,7 @@ class AttachmentType(Enum):
     EVENT = "event"
 
 
-class SizeType(Enum):
+class SizeType(str, Enum):
     S = "s"
     M = "m"
     X = "x"
