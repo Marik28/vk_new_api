@@ -36,7 +36,7 @@ class SizeType(Enum):
     R = "r"
     Y = "y"
     Z = "z"
-    W = "W"
+    W = "w"
 
 
 class PhotoSize(BaseModel):
