@@ -83,4 +83,4 @@ class WallPost(BaseModel):
     from_id: int
     date: datetime.datetime
     text: str
-    attachments: list[Attachment]
+    attachments: Optional[list[Attachment]]
